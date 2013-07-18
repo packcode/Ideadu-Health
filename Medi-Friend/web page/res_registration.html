@@ -31,10 +31,17 @@ if (x==null || x=="")
   alert("Please enter your Pin Code");
   return false;
   }
+  
+  var x=document.forms["name"]["element_7"].value;
+if (x==null || x=="")
+  {
+  alert("Please enter your Email ID");
+  return false;
+  }
 }
 </script>
 		<title>MEDI-FRIEND</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700" rel="stylesheet" />
@@ -111,7 +118,15 @@ if (x==null || x=="")
 <option value="O-" >O-</option>
 			</select>
 	</div> 
-		</li>		<li id="li_5" >
+		</li>	
+			<div>		
+		<span>
+        Enter Email ID:<input id="element_7" name= "element_7" class="element text" maxlength="255" value="" />
+			
+		</span>
+		</div>
+
+	<li id="li_5" >
 		<div>
 		10 Digit	Mobile No:<input id="element_5" name="element_5" class="element text medium" type="text" maxlength="10" value=""/> 
 		</div> 
@@ -120,6 +135,8 @@ if (x==null || x=="")
 		<div class="left">
 			Postal / Zip Code:<input id="element_6_5" name="element_6_5" class="element text medium" maxlength="6" value="" type="text">
 		</div>
+		<li id="li_1" >
+	
 					<li class="buttons">
 			    <input type="hidden" name="form_id" value="659611" />
 			    

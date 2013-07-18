@@ -1,20 +1,21 @@
 
 <?php
 $var=0;
-$con=mysqli_connect("localhost","root","12345","trial_DB");
-/*
+$con=mysqli_connect("localhost","Automatons","Automatons","Automatons");
+
 
 //check for DB connection
+/*
 if ($con)
   {
   echo "Connection is succeeded.</br>";
   }
   else {
-	echo "Connection error";  	
+	echo "Connection error !!";  	
   	}
-  */	
+ 	
 		  
-  
+  */
   
 $blg=$_POST["element_2"];
 $pc=$_POST["element_4_5"];
@@ -30,7 +31,7 @@ while($row = mysqli_fetch_array($result))
 			$var++;
 if($var==1) {
 
-				
+	echo "The list of available Donors are: <align='center'>";			
 	echo "<table border='1' align='center'>
 	
 <tr>
@@ -55,6 +56,5 @@ if($var==1) {
 										
 					echo "Sorry no donor is available for your blood :( ";
 					}
-			
 ?>
 

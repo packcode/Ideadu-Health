@@ -3,6 +3,7 @@ $name=$_POST["element_1_1"];
 
 
 $bg=$_POST["element_4"];
+$email=$_POST["element_7"];
 $contact=$_POST["element_5"];
 
 $pincode=$_POST["element_6_5"];
@@ -10,7 +11,8 @@ $pincode=$_POST["element_6_5"];
 
 
 
-$con=mysqli_connect("localhost","root","12345","trial_DB");
+$con=mysqli_connect("localhost","Automatons","Automatons","Automatons");
+/*
 if ($con)
   {
   echo "Connection is succeeded.</br>";
@@ -20,17 +22,18 @@ if ($con)
 echo "Connection error";  	
   	}
 
-
-	$sql="INSERT INTO donors (name,bg,contact,pincode)
-         VALUES ('$name','$bg','$contact','$pincode')";
+*/
+	$sql="INSERT INTO donors (name,bg,email,contact,pincode)
+         VALUES ('$name','$bg','$email','$contact','$pincode')";
          
          	if (mysqli_query($con,$sql))
   {
-  echo "Table persons created successfully";
+  echo "You have baan added to our Data Base. We will contact you in need !";
   }
 else
   {
-  echo "Error creating table: " . mysqli_error($con);
-  }
+  echo "SORRY ! Something went wrong! :(";
+//echo "SORRY ! Something went wrong! :(". mysqli_error($con);  
+}
   
 ?>
