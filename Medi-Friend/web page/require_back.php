@@ -1,21 +1,30 @@
-
 <?php
-$var=0;
-$con=mysqli_connect("localhost","Automatons","Automatons","Automatons");
 
+
+
+echo "<!DOCTYPE html>";
+echo "<html>";
+echo "<br><br>	<br>";
+echo "<body bgcolor=#D1FFD1></body>";
+echo "</html>";
+
+
+
+$var=0;
+$con=mysqli_connect("localhost","****","***","****");
+/*
 
 //check for DB connection
-/*
 if ($con)
   {
   echo "Connection is succeeded.</br>";
   }
   else {
-	echo "Connection error !!";  	
+	echo "Connection error";  	
   	}
- 	
+  */	
 		  
-  */
+  
   
 $blg=$_POST["element_2"];
 $pc=$_POST["element_4_5"];
@@ -31,20 +40,20 @@ while($row = mysqli_fetch_array($result))
 			$var++;
 if($var==1) {
 
-	echo "The list of available Donors are: <align='center'>";			
+				
 	echo "<table border='1' align='center'>
 	
 <tr>
-<th>Donor Name</th>
-<th>Blood Group</th>
-<th>Contact</th>
+<th bgcolor=#7094DB>Donor Name</th>
+<th bgcolor=#7094DB>Blood Group</th>
+<th bgcolor=#7094DB>Contact</th>
 </tr>";
 
 }
   echo "<tr>";
-  echo "<td>" . $row['name'] . "</td>";
-  echo "<td>" . $row['bg'] . "</td>";
-  echo "<td>" . $row['contact'] . "</td>";
+  echo "<td bgcolor=#FF9933>" . $row['name'] . "</td>";
+  echo "<td bgcolor=#CC99FF>" . $row['bg'] . "</td>";
+  echo "<td bgcolor=#99FF33>" . $row['contact'] . "</td>";
   echo "</tr>";
 	
 	}
@@ -56,5 +65,6 @@ if($var==1) {
 										
 					echo "Sorry no donor is available for your blood :( ";
 					}
+			
 ?>
 

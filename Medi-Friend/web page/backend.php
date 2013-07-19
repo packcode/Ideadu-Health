@@ -11,7 +11,7 @@ $pincode=$_POST["element_6_5"];
 
 
 
-$con=mysqli_connect("localhost","Automatons","Automatons","Automatons");
+$con=mysqli_connect("localhost","****","****","****");
 /*
 if ($con)
   {

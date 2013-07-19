@@ -1,21 +1,11 @@
-Arcana 2.0 by HTML5 UP
-html5up.net | @n33co
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Project name: Medi-Friend
+Team Name: Automatons, Institute of Informatics and communication,
+		University of Delhi South Campus, New Delhi
 
-A business/corporate style responsive site template. It's pretty barebones but should 
-go over pretty well for folks wanting to get their serious business on.
+We are working on this project in collaboration with NIC(National Informatics Center), India.
+The aim of this project is to make a web app and phone app, which will provide a medium between users who want to donate their blood and the patients who require blood.
+The idea behind the project is, the donor will feed his/her details into the app and he will be notified when there will be requirement of his blood in future.
+The notification can be given ti him either providing him notification sms/mail on his phone, we need a sms gateway for shooting sms to the donors.
 
-Feedback, bug reports, and comments are not only welcome, but strongly encouraged :)
 
-AJ
-n33.co @n33co dribbble.com/n33
-
-Credits:
-
-	Images:
-		fotogrph (http://fotogrph.com)
-	
-	Other:
-		jQuery (jquery.com)
-		html5shiv.js (@afarkas @jdalton @jon_neal @rem)
-		5grid.js + 5grid-ui.js (n33.co)
+Project Status: We have created a web page which "http://10.104.1.100/nic/Automatons/" which is a very basic one, it takes the pincode of the donor and saves it into our database and when you'll go to the blod requirement zone it will just show you the names of the donors and his corresponding details. Then the patient can call that donor.
